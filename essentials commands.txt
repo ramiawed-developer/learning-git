@@ -1,6 +1,7 @@
 # add all file to staged 
 git add .
 git commit -m "message"
+git commit -am "message" // add all the files to staged and commit
 git status
 git log --oneline
 # display all the branches that you have
