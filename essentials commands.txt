@@ -21,6 +21,10 @@ git merge branch_name
 # it doesn't add any new files or untracked files
 # add the -u flag to add the new file and the untracked files
 git stash push
+git stash push -m "message" // to give a name to the stash
 git stash push -u
 # pop off the latest set of changes that I've added to the stash, and it would put them in working directory
 git stash pop
+git stash pop stash@{} // pop the stash by index
+# list all the stash 
+git stash list
