@@ -1,0 +1,26 @@
+# add all file to staged 
+git add .
+git commit -m "message"
+git status
+git log --oneline
+# display all the branches that you have
+git branch
+# This safely deletes the branch only if it’s already merged
+git branch -d branch_name
+# If Git refuses because it’s not merged, you can force delete
+git branch -D branch_name
+# create a new branch
+git branch branch_name
+# switch to another branch
+git switch branch_name
+# create a branch and switch to it
+git switch -c branch_name
+# merge from the branch to the current branch
+git merge branch_name
+# stash changes, take all the staged and unstaged from the working directory and puts them in stash
+# it doesn't add any new files or untracked files
+# add the -u flag to add the new file and the untracked files
+git stash push
+git stash push -u
+# pop off the latest set of changes that I've added to the stash, and it would put them in working directory
+git stash pop
